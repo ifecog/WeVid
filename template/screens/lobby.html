@@ -1,1 +1,15 @@
-<h1>Welcome to the lobby</h1>
+{% extends 'base.html' %} {% block title %}Lobby{% endblock title %}
+</br>
+{% load static %}
+{% block content %}
+<main>
+    <section id="form-container">
+        <img id="logo" src="{% static 'images/chat-icon.png' %}" />
+
+        <div>
+            <h1>Welcome to WeVid</h1>
+            <p>A video-conferencing app</p>
+        </div>
+    </section>
+</main>
+{% endblock content %}
